@@ -1,0 +1,31 @@
+ALGORITHM Chaine_of_words_and
+VAR 
+    str:STRING
+    nbCaracter: INTEGER
+    nbVowel: INTEGER
+    nbWorld: INTEGER
+    nbSpace: INTEGER
+    c: CHAR
+BEGIN 
+    nbSpace:=0;
+    nbCaracter:=0;
+    nbVowel:=0;
+    //sentence to read.
+     REPEAT
+          Write('give a caracter')
+          Read(c)
+          nbCaracter=nbCaracter+1
+            IF (c:=" ") THEN
+               nbSpace:=nbSpace+1 
+            
+            END_IF
+         IF (c:="a" or c:="e" or c:="i" or c:="o" or c:="u" or c:="y") THEN
+            nbVowel:=nbVowel+1 
+        
+         END_IF  
+
+     UNTIL (c='.')
+     nbWorld=nbSpace+1  
+
+     
+END
