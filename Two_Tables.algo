@@ -1,0 +1,29 @@
+ALGORITHM Two_Tables
+VAR 
+    Table_one, Table_two: INTEGER
+    i, j, n, m: INTEGER
+BEGIN
+  Write('Give the length of the table')
+  Read (n)
+  FOR i FROM 0 TO n-1 STEP 1  DO   // the index of arrays start from 0;
+     Read(Table_one[i]) // to access the element, we use the name_array[indexation]
+  END_FOR
+  Write('Give the length of the table')
+  Read (m)
+  FOR i FROM 0 TO m-1 STEP 1 DO
+  Read(Table_two[i]) // to access the element, we use the name_array[indexation]
+  END_FOR
+
+  tab=concat(Table_one,Table_two)
+
+FOR i FROM 0 TO table.length-1 DO
+FOR j FROM 0 TO table.length-1
+IF (table_one[i]<>table_two[j]) Then
+SUM:= SUM+table_one[i]
+END IF
+END FOR
+END FOR
+    write (SUM)
+    END
+
+
