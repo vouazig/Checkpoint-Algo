@@ -1,0 +1,20 @@
+FUNCTION scalar (v1,v2:TAB) : FLOAT
+VAR 
+    i:INTEGER;
+    ps:FLOAT;
+BEGIN
+    FOR i FROM 0 TO v2:lemgth-1 STEP 1 DO
+        ps:=v1[i]*v2[i]+ps
+    END_FOR
+    RETURN ps
+END
+
+ALGORITHM Main Scalar
+VAR
+    TAB1: ARRAY_OF FLOAT;
+    TAB2: ARRAY_OF FLOAT;
+    dot:FLOAT
+BEGIN
+      Scalar(TAB1, TAB2)
+      dot:=Scalar(TAB1, TAB2)
+END
