@@ -1,0 +1,16 @@
+ALGORITHM SORT
+VAR
+    TAB:array_name : ARRAY_OF INTEGER;
+    n, i, j: INTEGER
+BEGIN
+    Write("give the length of the table")
+    Read(n)
+    FOR i FROM 0 to n-2 STEP 1 DO
+    FOR j FROM 0 to n-1 STEP 1 DO
+    IF (tab[i]>tab[i+1])
+    SWAP(tab[i],tab[i+1]])
+    END IF
+    END FOR
+    END FOR
+    writhe(TAB)
+END
